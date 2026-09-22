@@ -42,52 +42,52 @@
     {
       "name": "number",
       "example": "17253100591",
-      "description": ""
+      "description": "The submitted number, exactly as it appeared in your file."
     },
     {
       "name": "activated",
       "example": "yes",
-      "description": ""
+      "description": "Whether the number is registered on LINE."
     },
     {
       "name": "uid",
       "example": "ub2b4c718e837b7f19321820",
-      "description": ""
+      "description": "Telegram user id."
     },
     {
       "name": "nickname",
       "example": "Kenji",
-      "description": ""
+      "description": "Public display name on the profile."
     },
     {
       "name": "avatar",
       "example": "https://line.waavatar.xyz/v/example.jpg",
-      "description": ""
+      "description": "Avatar URL."
     },
     {
       "name": "category",
       "example": "individual portrait",
-      "description": ""
+      "description": "Avatar category, e.g. individual portrait."
     },
     {
       "name": "gender",
       "example": "female",
-      "description": ""
+      "description": "Gender estimated from the avatar."
     },
     {
       "name": "age",
       "example": "72",
-      "description": ""
+      "description": "Age band estimated from the avatar."
     },
     {
       "name": "skin_color",
       "example": "east_asian",
-      "description": ""
+      "description": "Skin tone estimated from the avatar."
     },
     {
       "name": "hair_color",
       "example": "gray white",
-      "description": ""
+      "description": "Hair colour estimated from the avatar."
     }
   ],
   "statuses": [

@@ -20,16 +20,16 @@ This is the official AvatarLookup example repository for **one** bulk product, `
 
 | Column | Example | Meaning |
 |---|---|---|
-| `number` | `17253100591` |  |
-| `activated` | `yes` |  |
-| `uid` | `ub2b4c718e837b7f19321820` |  |
-| `nickname` | `Kenji` |  |
-| `avatar` | `https://line.waavatar.xyz/v/example.jpg` |  |
-| `category` | `individual portrait` |  |
-| `gender` | `female` |  |
-| `age` | `72` |  |
-| `skin_color` | `east_asian` |  |
-| `hair_color` | `gray white` |  |
+| `number` | `17253100591` | The submitted number, exactly as it appeared in your file. |
+| `activated` | `yes` | Whether the number is registered on LINE. |
+| `uid` | `ub2b4c718e837b7f19321820` | Telegram user id. |
+| `nickname` | `Kenji` | Public display name on the profile. |
+| `avatar` | `https://line.waavatar.xyz/v/example.jpg` | Avatar URL. |
+| `category` | `individual portrait` | Avatar category, e.g. individual portrait. |
+| `gender` | `female` | Gender estimated from the avatar. |
+| `age` | `72` | Age band estimated from the avatar. |
+| `skin_color` | `east_asian` | Skin tone estimated from the avatar. |
+| `hair_color` | `gray white` | Hair colour estimated from the avatar. |
 
 The result is a **point-in-time signal**, not a verdict, and not identity data. It describes what the provider reported at the moment the task ran.
 
