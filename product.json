@@ -1,5 +1,5 @@
 {
-  "name": "LINE Bulk Avatar Analysis",
+  "name": "LINE bulk number profile",
   "brand": "AvatarLookup",
   "repository": "avatarlookup/line-bulk-profile-api",
   "description": "Upload numbers and download the LINE profile data, avatar included.",
@@ -30,8 +30,8 @@
     }
   },
   "limits": {
-    "min_items": 1000,
-    "max_items": 100000,
+    "min_items": 2000,
+    "max_items": 500000,
     "poll_interval_seconds": 30,
     "file_formats": [
       "txt",
@@ -40,54 +40,49 @@
   },
   "result_fields": [
     {
-      "name": "number",
-      "example": "17253100591",
-      "description": "The submitted number, exactly as it appeared in your file."
+      "name": "identifier",
+      "example": "12345678900",
+      "description": "Submitted identifier, used to join the result to the input. Phone identifiers include their country code."
     },
     {
       "name": "activated",
-      "example": "yes",
-      "description": "Whether the number is registered on LINE."
+      "example": "true",
+      "description": "The determined positive/negative signal for this product; interpret it in the product context."
     },
     {
       "name": "uid",
-      "example": "ub2b4c718e837b7f19321820",
-      "description": "Telegram user id."
+      "example": "u5158553776c28d9164035c4fd0a07cd4",
+      "description": "Platform user ID when available."
     },
     {
-      "name": "nickname",
-      "example": "Kenji",
-      "description": "Public display name on the profile."
-    },
-    {
-      "name": "avatar",
-      "example": "https://line.waavatar.xyz/v/example.jpg",
-      "description": "Avatar URL."
+      "name": "avatar_url",
+      "example": "https://profile.line-scdn.net/example",
+      "description": "Public avatar URL when available; an empty value does not reveal a private image."
     },
     {
       "name": "category",
       "example": "individual portrait",
-      "description": "Avatar category, e.g. individual portrait."
-    },
-    {
-      "name": "gender",
-      "example": "female",
-      "description": "Gender estimated from the avatar."
+      "description": "Image category estimated from the avatar."
     },
     {
       "name": "age",
-      "example": "72",
-      "description": "Age band estimated from the avatar."
+      "example": "31",
+      "description": "Age estimated from the avatar, not a verified personal fact."
+    },
+    {
+      "name": "gender",
+      "example": "male",
+      "description": "Gender presentation estimated from the avatar."
     },
     {
       "name": "skin_color",
       "example": "east_asian",
-      "description": "Skin tone estimated from the avatar."
+      "description": "Skin-tone estimate derived from the avatar."
     },
     {
       "name": "hair_color",
-      "example": "gray white",
-      "description": "Hair colour estimated from the avatar."
+      "example": "black",
+      "description": "Hair-colour estimate derived from the avatar."
     }
   ],
   "statuses": [
@@ -98,5 +93,5 @@
   "pricing_url": "https://avatarlookup.com/pricing",
   "maintainer": "AvatarLookup",
   "license": "MIT",
-  "last_reviewed": "2026-09-22"
+  "last_reviewed": "2026-10-30"
 }
